@@ -1,0 +1,24 @@
+{
+	"authHost": "http://lbd.app",
+	"authEndpoint": "/broadcasting/auth",
+	"clients": [
+		{
+			"appId": "7ae9b53ed54497c1",
+			"key": "4deebfb00131feb67a47eb4f2f6180a2"
+		}
+	],
+	"database": "redis",
+	"databaseConfig": {
+		"redis": {},
+		"sqlite": {
+			"databasePath": "/database/laravel-echo-server.sqlite"
+		}
+	},
+	"devMode": true,
+	"host": null,
+	"port": "6004",
+	"protocol": "http",
+	"socketio": {},
+	"sslCertPath": "",
+	"sslKeyPath": ""
+}
