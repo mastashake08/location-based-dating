@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Location;
+use App\Events\FindMatch;
 class LocationController extends Controller
 {
     /**
@@ -35,6 +36,10 @@ class LocationController extends Controller
     public function store(Request $request)
     {
         //
+        $location = Location::Create($request->all());
+        event(new FindMatch($location));
+        return $location;
+
     }
 
     /**
